@@ -56,8 +56,7 @@ https://istio.io/latest/docs/examples/bookinfo/
 
 # Networking workarounds for windows:
 
-Windows host system cannot ping or access linux containers running within WSL2, so below workarounds are required:
-reference: https://docs.docker.com/desktop/windows/networking/#i-cannot-ping-my-containers
+Windows host system cannot ping or access linux containers running within WSL2, so below workarounds are required, reference: https://docs.docker.com/desktop/windows/networking/#i-cannot-ping-my-containers
 
 if you want to connect to a service in the kubernetes cluster on a temporary basis please use below command, if you have mac you dont need it, this is a workaround due to windows networking limitations for linux containers in docker desktop:
 ```
