@@ -1,10 +1,6 @@
 # windows-container-kubernetes-dev
 Guide for creating a local development environment suitable for multi k3s cluster creation and container development on windows machines
 
-I have tried multiple local kubernetes clusters and found k3d the most suitable for local development and most feature rich to cover any use case, also it has a very small footprint and startup time.
-
-Special thanks to my friend https://github.com/hdnebat for his guides and advices.
-
 # Primary tools:
 
 Setup Docker Desktop https://www.docker.com/products/docker-desktop
@@ -44,10 +40,12 @@ https://community.suse.com/posts/setting-up-rancher-on-your-local-machine-with-r
 if you want to try service mesh, follow this guide, before starting install grafana/monitoring + istio from the cluster tools page in rancher
 https://istio.io/latest/docs/examples/bookinfo/
 
-if you want to connect to a service in the kubernetes cluster on a temporary basis please use below command, if you have mac/linux you dont need it, this is a workaround due to windows networking limitations for linux containers in docker desktop:
+if you want to connect to a service in the kubernetes cluster on a temporary basis please use below command, if you have mac you dont need it, this is a workaround due to windows networking limitations for linux containers in docker desktop:
+```
 kubectl port-forward svc/nginx 9090:80
-
-if you instead need a permanent connection (maintained even after restart), use below command, if you have mac/linux you dont need it, this is a workaround due to windows networking limitations for linux containers in docker desktop:
+```
+if you instead need a permanent connection (maintained even after restart) will guide you in next sessions ISA, below command, if you have mac you dont need it, this is a workaround due to windows networking limitations for linux containers in docker desktop:
+```
 docker run \
 -d \
 -p <local-port>:<local-port> \
@@ -56,7 +54,9 @@ docker run \
 alpine/socat \
 TCP4-LISTEN:<local-port>,fork,reuseaddr \
 TCP4:<k3d-host>:<k3d-port>
+```
 example:
+```
 docker run \
 -d \
 -p 9091:9091 \
@@ -65,6 +65,7 @@ docker run \
 alpine/socat \
 TCP4-LISTEN:9091,fork,reuseaddr \
 TCP4:172.30.210.1:80
+```
 reference: https://github.com/rancher/k3d/issues/89
 
 Happy Containering, Clustering, DevOpsing! :)
