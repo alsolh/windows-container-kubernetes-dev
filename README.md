@@ -1,6 +1,8 @@
 # windows-container-kubernetes-dev
 Guide for creating a local development environment suitable for multi k3s cluster creation and container development on windows machines
 
+Special thanks to my friend https://github.com/hdnebat for his guidance and advices.
+
 # Primary tools:
 
 Setup Docker Desktop https://www.docker.com/products/docker-desktop
