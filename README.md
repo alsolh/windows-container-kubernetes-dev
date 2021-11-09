@@ -62,7 +62,7 @@ if you want to connect to a service in the kubernetes cluster on a temporary bas
 ```
 kubectl port-forward svc/nginx 9090:80
 ```
-if you instead need a permanent connection (maintained even after restart) will guide you in next sessions ISA, below command, if you have mac you dont need it, this is a workaround due to windows networking limitations for linux containers in docker desktop:
+if you instead need a permanent connection (maintained even after restart), below command, if you have mac you dont need it, this is a workaround due to windows networking limitations for linux containers in docker desktop:
 ```
 docker run \
 -d \
