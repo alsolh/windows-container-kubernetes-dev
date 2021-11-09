@@ -17,7 +17,7 @@ https://chocolatey.org/install
 https://community.chocolatey.org/packages/istioctl
 Putty and MTPutty https://ttyplus.com/multi-tabbed-putty/, https://www.putty.org/
 
-# Useful Guides
+# Useful Guides:
 
 if you want to install portainer to manage the docker engine only:
 https://docs.portainer.io/v/ce-2.6/start/install/server/docker/wsl
@@ -41,6 +41,11 @@ https://community.suse.com/posts/setting-up-rancher-on-your-local-machine-with-r
 
 if you want to try service mesh, follow this guide, before starting install grafana/monitoring + istio from the cluster tools page in rancher
 https://istio.io/latest/docs/examples/bookinfo/
+
+# Networking workarounds for windows:
+
+Windows host system cannot ping or access linux containers running within WSL2, so below workarounds are required:
+reference: https://docs.docker.com/desktop/windows/networking/#i-cannot-ping-my-containers
 
 if you want to connect to a service in the kubernetes cluster on a temporary basis please use below command, if you have mac you dont need it, this is a workaround due to windows networking limitations for linux containers in docker desktop:
 ```
