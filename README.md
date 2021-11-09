@@ -6,17 +6,26 @@ Special thanks to my friend https://github.com/hdnebat for his guidance and advi
 # Primary tools:
 
 Setup Docker Desktop https://www.docker.com/products/docker-desktop
+
 Install K3D https://github.com/rancher/k3d/releases/download/v5.0.3/k3d-windows-amd64.exe
+
 Install JQ https://github.com/stedolan/jq/releases/download/jq-1.6/jq-win64.exe
+
 Install vscode
+
 Install GIT https://git-scm.com/, keep default settings and make vscode the default editor
+
 Install powershell core https://github.com/PowerShell/PowerShell
 
 # Optional but useful tools:
 https://k9scli.io/
+
 https://k8slens.dev/
+
 https://chocolatey.org/install
+
 https://community.chocolatey.org/packages/istioctl
+
 Putty and MTPutty https://ttyplus.com/multi-tabbed-putty/, https://www.putty.org/
 
 # Useful Guides:
@@ -26,6 +35,7 @@ https://docs.portainer.io/v/ce-2.6/start/install/server/docker/wsl
 
 if you want to try kubernetes ,follow this guide for the optimum cluster configuration
 https://github.com/keunlee/k3d-metallb-starter-kit
+
 use below command to create the cluster instead to lower the load on your laptop
 ```
 k3d cluster create my-cluster \
