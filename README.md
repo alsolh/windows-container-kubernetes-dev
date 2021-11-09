@@ -25,11 +25,13 @@ https://docs.portainer.io/v/ce-2.6/start/install/server/docker/wsl
 if you want to try kubernetes ,follow this guide for the optimum cluster configuration
 https://github.com/keunlee/k3d-metallb-starter-kit
 use below command to create the cluster instead to lower the load on your laptop
+```
 k3d cluster create my-cluster \
 --network my-cluster-network \
 --no-lb \
 --agents 1 \
 --k3s-arg '--disable=servicelb@server:0'
+```
 
 if you want example app stacks on kubernetes,docker,docker compose (docker compose is not required to learn but good to know)
 https://github.com/dockersamples/example-voting-app
