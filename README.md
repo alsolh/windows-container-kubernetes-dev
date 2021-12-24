@@ -7,9 +7,19 @@ Special thanks to my friend https://github.com/hdnebat for his guidance and advi
 
 Setup Docker Desktop https://www.docker.com/products/docker-desktop
 
-Install K3D https://github.com/rancher/k3d/releases/download/v5.0.3/k3d-windows-amd64.exe
+https://chocolatey.org/install
 
-Install JQ https://github.com/stedolan/jq/releases/download/jq-1.6/jq-win64.exe
+Install K3D
+
+```
+choco install k3d
+```
+
+Install JQ
+
+```
+choco install jq
+```
 
 Install vscode
 
@@ -21,8 +31,6 @@ Install powershell core https://github.com/PowerShell/PowerShell
 https://k9scli.io/
 
 https://k8slens.dev/
-
-https://chocolatey.org/install
 
 https://community.chocolatey.org/packages/istioctl
 
